@@ -10,7 +10,16 @@
   "author": "Kinjal Mudgal",
   "license": "ISC",
   "dependencies": {
-  "node-fetch": "*",
-  "xhr2":"*"
-}
+    "node-fetch": "*",
+    "xhr2": "*"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mudgalkinjal/Fetch-and-Post.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mudgalkinjal/Fetch-and-Post/issues"
+  },
+  "homepage": "https://github.com/Mudgalkinjal/Fetch-and-Post#readme"
 }
