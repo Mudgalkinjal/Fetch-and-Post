@@ -1,14 +1,13 @@
 var fetch = require('node-fetch');
 var XMLHttpRequest = require('xhr2');
 
-var getUrl = "https://interview.adpeai.com/api/v1/get-task";
-var postUrl = "https://interview.adpeai.com/api/v1/submit-task";
+const base_url = "https://interview.adpeai.com/api/v1";
+
 var postRequest = new XMLHttpRequest();
 let result, ob;
 
 const getReq = async()=>{
-  
-   const response = await fetch(getUrl);
+   const response = await fetch(base_url+"/get-task");
    
    if(response.ok){
     return response.json();
@@ -60,7 +59,7 @@ function calculate(obj) {
 function postData(data) { // Function to post the data to the url given
    postData = JSON.stringify(data);
 
-   postRequest.open("POST", postUrl);
+   postRequest.open("POST", base_url+"/submit-task");
 
    postRequest.setRequestHeader("Accept", "application/json");
    postRequest.setRequestHeader("Content-Type", "application/json");
