@@ -8,19 +8,19 @@ let result, ob;
 
 const getReq = async()=>{
   
-  const response = await fetch(getUrl);
-  if(response.ok){
-    return response.json();2
+   const response = await fetch(getUrl);
+   
+   if(response.ok){
+    return response.json();
   }
+  
   
 }
 
 const resp = getReq().then((response)=>{
    response = JSON.stringify(response);
    return JSON.parse(response);
-}).catch((err) => {
-   console.log(err);
-});
+}).catch(error => console.log(error));
 
 const getResp = async () => { 
    ob = await resp;  //waiting till promise returns a response
