@@ -22,8 +22,13 @@ const resp = getReq().then((response)=>{
    return JSON.parse(response);
 }).catch(error => console.log(error));
 
-const getResp = async () => { 
-   ob = await resp;  //waiting till promise returns a response
+const getResp = async () => {
+   try {
+      ob = await resp;  //waiting till promise returns a response
+   }
+   catch (error) {
+      console.log(error);
+  }
    result = calculate(ob); //sending object data to calculate math operations
 };
  
