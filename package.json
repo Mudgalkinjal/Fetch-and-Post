@@ -1,0 +1,17 @@
+{
+  "name": "nodeadp",
+  "version": "1.0.0",
+  "description": "ADP project to GET data and POST data from and to the server",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "npm start"
+  },
+  "author": "Kinjal Mudgal",
+  "license": "ISC",
+  "dependencies": {
+  "node-fetch": "*",
+  "xhr2":"*",
+  "web-vitals": "^1.1.2"
+}
+}
