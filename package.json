@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "npm test",
-    "start": "node app.js"
+    "start": "node app.js",
+    "lint": "eslint"
   },
   "author": "Kinjal Mudgal",
   "license": "ISC",
@@ -13,7 +14,6 @@
     "node-fetch": "*",
     "xhr2": "*"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mudgalkinjal/Fetch-and-Post.git"
@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/Mudgalkinjal/Fetch-and-Post/issues"
   },
-  "homepage": "https://github.com/Mudgalkinjal/Fetch-and-Post#readme"
+  "homepage": "https://github.com/Mudgalkinjal/Fetch-and-Post#readme",
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3"
+  }
 }
