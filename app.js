@@ -18,6 +18,8 @@ const getReq = async()=>{
 const resp = getReq().then((response)=>{
    response = JSON.stringify(response);
    return JSON.parse(response);
+}).catch((err) => {
+   console.log(err);
 });
 
 const getResp = async () => { 
